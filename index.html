@@ -13,30 +13,28 @@
     <main>
         <img class="logo-alura" src="./assets/logo.svg" alt="logo-alura">
         <!-- <input class="input-text" type="text" placeholder="Ingrese el texto aquí"> -->
-        <textarea name="" id="" cols="30" rows="5" placeholder="Ingrese el texto aquí" class="input-text"></textarea>
+        <textarea name="" id="mensaje" cols="30" rows="5" placeholder="Ingrese el texto aquí" class="input-text"></textarea>
         <div class="footer">
             <div class="mensaje-botones">
                 <img src="./assets/admiracion.png" alt="icono-admiracion">
                 <p>Sólo letras minúsculas y si acentos</p>
             </div>
             <div class="botones-encriptar">
-                <input type="submit" id="encriptar" value="Encriptar" class="boton-activo">
+                <input type="submit" id="encriptar" value="Encriptar" class="">
                 <input type="submit" id="desencriptar" value="Desencriptar">
             </div>
         </div>
         
     </main>
     <aside>
-        <div class="contenido-aside-error ">
+        <div class="contenido-aside-error " id="error">
             <img class="imagen-aside" src="./assets/imagen-error.PNG" alt="imagen-error">
             <h1 class="titulo-aside">Ningún mensaje fue encontrado</h1>
             <p class="parrafo-aside">Ingresa el texto que deseas encriptar o desencriptar</p>
         </div>
-        <div class="contenido-aside-exito is-active">
-            <p class="parrafo-aside-exito">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Assumenda eos illo incidunt minus ipsa ipsum ab? Fugit dolorem soluta voluptas accusantium, 
-                saepe quasi quia a asperiores nemo, velit suscipit quam.
+        <div class="contenido-aside-exito is-active" id="exito">
+            <p class="parrafo-aside-exito" id="mensaje-encriptado">
+             
             </p>
             <input class="boton-copiar" type="submit" id="copiar" value="Copiar">
         </div>

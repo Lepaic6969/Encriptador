@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 main{
-    width:70%;
+    width:65%;
     height: 700px;
     display:inline-block;
     float:left;
@@ -79,7 +79,7 @@ main{
 
 aside{
     
-    width:27%;
+    width:34%;
     display:inline-block;
     height: 800px;
     /* border:1px solid black; */
@@ -88,6 +88,7 @@ aside{
     border-radius: 30px;
     display:flex;
     align-items: center;
+    overflow-x: scroll;
     
 }
 .is-active{
@@ -102,6 +103,7 @@ aside{
 .contenido-aside-exito{
     display:none;
     height: 80%;
+    width: 100%;
 }
 .titulo-aside{
     font-family: 'Inter', sans-serif;
@@ -141,7 +143,7 @@ aside{
     color:rgb(43,82,132);
     border:1px solid rgb(43,82,132);
     text-align: center;
-    margin-top: 99px;
+    margin-top: 300px;
 }
 .boton-copiar:hover{
     background-color: rgb(10,56,113);
