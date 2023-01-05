@@ -15,6 +15,7 @@ let msgEncriptado="";
 const $exito=document.getElementById("exito");
 const $error=document.getElementById("error");
 
+
 //Acá voy con los eventos click de mi aplicativo.
 document.addEventListener("click",e=>{
     if(e.target.matches("#encriptar")){
@@ -49,7 +50,11 @@ document.addEventListener("click",e=>{
        
     }
     if(e.target.matches("#copiar")){
-        console.log("copiando");
+        $parrafo.select();
+        document.execCommand("copy");
+        //Esto es para que una vez copiado el mensaje, me limpie el cuadro de texto 
+        //donde lo quiero pegar.
+        $textArea.value="";
     }
 
 });
